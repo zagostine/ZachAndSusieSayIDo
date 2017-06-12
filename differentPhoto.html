@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>I'M MR. MEESEEKS LOOK AT ME</title>
+		
+		
+		<!--Stylesheet CSS-->
+		
+		
+		<style>
+body, html{
+    height:100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+	background-image: url("art.jpg");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-attachment: fixed;
+	background-size: 100%;
+	margin: 0px;
+}
+
+.wrapper {
+	height: 100%;
+	width: 1000px;
+	background-color: rgba(255, 255, 255, 0.6);
+	
+}
+
+.basicInfo {
+	width: 300px;
+	height: 100%;
+	margin: auto;
+	display: block;
+	position: fixed;
+	padding-top: 60px;
+	margin-left: 35px;
+}
+
+.head {
+	width 1000px;
+	padding-left: 50px;
+	
+}
+
+.name {
+	font-family: "Courier New";
+	font-size: 40px;
+	color: red;
+	padding-left: 15px;
+	padding-right: 15px;
+	display: inline;
+}
+
+.date {
+	font-family: "Arial";
+	font-size: 30px;
+	color: orange;
+	display: inline;
+	margin-left: 20px;
+	padding-right: 15px;
+}
+
+.location {
+	font-family: "Garamond";
+	font-size: 25px;
+	color: pink;
+	padding-right: 15px;
+	display: inline;
+
+}	
+
+.content {
+	width: 700px;
+	height: 100%;
+	float: right;
+}
+
+ul {
+	list-style-type: none;
+
+}
+
+a:link, a:visited {
+	color: black;
+	display: inline-block;
+	text-decoration: none;
+}
+
+li {
+	padding-top: 10px;
+	padding-bottom: 10px;
+	font-family: "Courier New";
+	font-size: 20px;
+}	
+
+#onClick {
+	width: 100%;
+	padding: 50px 0;
+	text-align: center;
+	background-color: lightblue;
+	margin-top:20px;
+}
+.toggle {
+	display: none;
+}
+
+.toggle.active {
+	display: block;
+}
+
+#content6 img {
+	border-style: solid;
+	border-width: 1px;
+	border-color: rgb(0, 0, 0);
+}
+
+
+		</style>
+	</head>
+	
+	<!--Body basic header content-->
+	
+	<body>
+	
+	<div class="wrapper">	
+	<div class="head">
+		<h1 class="name">Zach & Susie</h1>
+		<h2 class="date">November 11th</h2>
+		<h3 class="location">Mystic, CT</h3>
+	</div>
+	
+	<div class="basicInfo">
+
+		
+		<!--Navigation-->
+		
+		<ul>
+			<li><a href="javascript:ReverseDisplay('content1')">
+    Home
+</a></li>
+			<li><a href="javascript:ReverseDisplay('content2')">
+    Our Story
+</a></li>
+			<li><a href="javascript:ReverseDisplay('content3')">
+    RSVP
+</a></li>
+			<li><a href="javascript:ReverseDisplay('content4')">
+    Directions
+</a></li>
+			<li><a href="javascript:ReverseDisplay('content5')">
+    Activities
+</a></li>
+			<li><a href="javascript:ReverseDisplay('content6')">
+    Gallery
+</a></li>
+			<li><a href="https://www.bedbathandbeyond.com/store/giftregistry/view_registry_guest.jsp?pwsToken=&eventType=Wedding&inventoryCallEnabled=true&registryId=544487672&pwsurl=" target="blank">
+    Registry
+</a></li>
+		</ul>
+	</div>
+
+	<!--Main Content Here-->
+
+	<div class="content">
+	<!--Home-->
+	<div id="content1" class="toggle">
+  <p>This should not make anything appear</p>
+</div>
+
+<!--Story-->
+<div id="content2" class="toggle">
+  <p>Zach and Susie first met at Camp Hazen in the summer of 2007.  Zach, known for his worldclass hugs, was introduced as such, and responded in kind.  Experts debate that this moment is when Susie knew this was the man she would marry, while others belive it was Zach's performance of Elias at the campfire tallent show that won her over.  Either way, when the summer ended, the two stayed in touch during the long school year, vowing to see each other again next summer.  As it happend, the two met again next summer, and the next, and the next summer after that.  The two became counselors, and decided to spend their limmited free time with each other.  Their first date was reported as a perfect evening of pizza and stargazing.  The following month, the pair was off to college, Susie to study occupational therrapy at Itaca, and Zach to master that one level in Super Mario Bros at Champlain.  While not intending to stay together during their formal education, the duo once again found that their time was most enjoyable when spent with one another.  Defying the odds, the couple stayed together as they completed their respective degrees and graduated cum laude.  Craving new adventure, the two decided to head to Tar Heel country, where the sweet tea flowed freely and the air was warm as soup.  As the couple boldly dated where other couples had dated before, they discoverd the NC Art Gallery.  Many a weekend was spent roaming these halls and trails, examining the find works of art and giving the illustrious, "it's due WHEN?!" award to worthy pieces. It was here that Zach boldly packed a picknick and bravely asked Susie on a museam date.  Underneath a shady tree, Zach cleverly reached for a piece of cheese, only to produce a small ring instead.  She said yes.  </p>
+</div>
+
+<!--RSVP-->
+<div id="content3" class="toggle">
+  <p>Please RSVP by filling out the form below.</p>
+  <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfmunNkWD306D07tYDoizs8AJujxPX6IafaP_E5rIJqL-YqgQ/viewform?embedded=true" width="600" height="1200" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
+</div>
+
+<!--Directions-->
+<div id="content4" class="toggle">
+  <h2>Directions to the Mystic Museam of Art</h2>
+  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1259.2340080353276!2d-71.9719514231169!3d41.35278661959091!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89e60a1e58ba938f%3A0x2a843bdd111f9b51!2sMystic+Museum+of+Art!5e0!3m2!1sen!2sus!4v1496078262946" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+</div>
+
+<!--Activities-->
+<div id="content5" class="toggle">
+  <h1>Activities</h1>
+  <h4>Friday, November 10th, 5:00pm</h4>
+  <h2>Rehersal Dinner</h2>
+  <p>Join us for a lovely evening at the Mystic Museam of Art where we reherse and plan for the big day!  Wedding party only please.</p>
+  <hr>
+  <h4>Saturday, November 11th, 5:00pm - 6:00pm</h4>
+  <h2>Ceramony</h2>
+  <p>The big day is here!  Zach and Susie say their vows and look pretty.</p>
+  <hr>
+  <h4>Saturday, November 11th, 6:00pm - 11:00pm</h4>
+  <h2>Reception</h2>
+  <p>Dance the night away to the soulful, melodic jazz tunes of the Jazz Cats Quintette.  Cake will be served twice.</p>
+  <hr>
+  <h2>Sunday, November 12th, 10:00am</h2>
+  <p>Brunch and boardgames with the newlyweds at cafe place.  Groom plays for keeps. </p>
+
+</div>
+
+<!--Gallery-->
+<div id="content6" class="toggle">
+  <p>Gallery</p>
+  <img src="AmazeEngage/resize/square1.jpg" width="25%">
+  <img src="AmazeEngage/resize/square2.jpg" width="25%">
+  <img src="AmazeEngage/resize/square3.jpg" width="25%">
+  <img src="AmazeEngage/resize/square4.jpg" width="25%">
+  <img src="AmazeEngage/resize/square5.jpg" width="25%">
+  <img src="AmazeEngage/resize/square6.jpg" width="25%">
+  <img src="AmazeEngage/resize/square8.jpg" width="25%">
+  <img src="AmazeEngage/resize/square9.jpg" width="25%">
+   
+</div>
+
+	<!--Scripts-->
+	</div>
+	</div>
+	
+	
+<script>
+function ReverseDisplay(d) {
+  var els = document.querySelectorAll('.toggle.active:not(#' + d + ')');
+  for (var i = 0; i < els.length; i++) {
+    els[i].classList.remove('active');
+  }
+  document.getElementById(d).classList.toggle('active')
+
+}
+</script>
+</body>
+</html>
